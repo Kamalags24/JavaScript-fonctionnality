@@ -1,0 +1,120 @@
+Voici une liste des fonctions les plus couramment utilisées en JavaScript, accompagnées de brèves descriptions :
+
+1. **`alert(message)`** : Affiche une boîte de dialogue avec un message.
+   ```javascript
+   alert("Hello, world!");
+   ```
+
+2. **`console.log(message)`** : Affiche un message dans la console de développement.
+   ```javascript
+   console.log("This is a message");
+   ```
+
+3. **`parseInt(string, radix)`** : Convertit une chaîne de caractères en un entier.
+   ```javascript
+   let num = parseInt("10", 10);  // num = 10
+   ```
+
+4. **`parseFloat(string)`** : Convertit une chaîne de caractères en un nombre à virgule flottante.
+   ```javascript
+   let num = parseFloat("10.5");  // num = 10.5
+   ```
+
+5. **`setTimeout(function, delay)`** : Exécute une fonction après un certain délai (en millisecondes).
+   ```javascript
+   setTimeout(() => {
+       console.log("Executed after 2 seconds");
+   }, 2000);
+   ```
+
+6. **`setInterval(function, delay)`** : Exécute une fonction à intervalles réguliers (en millisecondes).
+   ```javascript
+   setInterval(() => {
+       console.log("Executed every 2 seconds");
+   }, 2000);
+   ```
+
+7. **`clearTimeout(timeoutID)`** : Annule un `setTimeout` précédemment établi.
+   ```javascript
+   let timeoutID = setTimeout(() => {
+       console.log("This will not be executed");
+   }, 2000);
+   clearTimeout(timeoutID);
+   ```
+
+8. **`clearInterval(intervalID)`** : Annule un `setInterval` précédemment établi.
+   ```javascript
+   let intervalID = setInterval(() => {
+       console.log("This will not be executed");
+   }, 2000);
+   clearInterval(intervalID);
+   ```
+
+9. **`Math.random()`** : Renvoie un nombre flottant pseudo-aléatoire entre 0 et 1.
+   ```javascript
+   let randomNum = Math.random();
+   ```
+
+10. **`Math.floor(number)`** : Renvoie le plus grand entier inférieur ou égal à un nombre.
+    ```javascript
+    let flooredNum = Math.floor(4.7);  // flooredNum = 4
+    ```
+
+11. **`Math.ceil(number)`** : Renvoie le plus petit entier supérieur ou égal à un nombre.
+    ```javascript
+    let ceiledNum = Math.ceil(4.1);  // ceiledNum = 5
+    ```
+
+12. **`Math.round(number)`** : Renvoie la valeur d'un nombre arrondie à l'entier le plus proche.
+    ```javascript
+    let roundedNum = Math.round(4.5);  // roundedNum = 5
+    ```
+
+13. **`Date()`** : Crée un nouvel objet Date avec la date et l'heure actuelles.
+    ```javascript
+    let currentDate = new Date();
+    ```
+
+14. **`Array.prototype.push(element)`** : Ajoute un ou plusieurs éléments à la fin d'un tableau et renvoie la nouvelle longueur du tableau.
+    ```javascript
+    let arr = [1, 2, 3];
+    arr.push(4);  // arr = [1, 2, 3, 4]
+    ```
+
+15. **`Array.prototype.pop()`** : Supprime le dernier élément d'un tableau et le renvoie.
+    ```javascript
+    let arr = [1, 2, 3];
+    let lastElement = arr.pop();  // lastElement = 3, arr = [1, 2]
+    ```
+
+16. **`Array.prototype.shift()`** : Supprime le premier élément d'un tableau et le renvoie.
+    ```javascript
+    let arr = [1, 2, 3];
+    let firstElement = arr.shift();  // firstElement = 1, arr = [2, 3]
+    ```
+
+17. **`Array.prototype.unshift(element)`** : Ajoute un ou plusieurs éléments au début d'un tableau et renvoie la nouvelle longueur du tableau.
+    ```javascript
+    let arr = [1, 2, 3];
+    arr.unshift(0);  // arr = [0, 1, 2, 3]
+    ```
+
+18. **`Array.prototype.map(callback)`** : Crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie sur chaque élément du tableau appelant.
+    ```javascript
+    let arr = [1, 2, 3];
+    let doubled = arr.map(x => x * 2);  // doubled = [2, 4, 6]
+    ```
+
+19. **`Array.prototype.filter(callback)`** : Crée un nouveau tableau avec tous les éléments qui passent le test implémenté par la fonction fournie.
+    ```javascript
+    let arr = [1, 2, 3, 4];
+    let even = arr.filter(x => x % 2 === 0);  // even = [2, 4]
+    ```
+
+20. **`Array.prototype.reduce(callback, initialValue)`** : Applique une fonction de réduction qui "accumule" chaque valeur du tableau (de gauche à droite) pour la réduire à une seule valeur.
+    ```javascript
+    let arr = [1, 2, 3, 4];
+    let sum = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);  // sum = 10
+    ```
+
+Ces fonctions sont très utiles et fréquemment employées dans divers contextes de développement en JavaScript.
